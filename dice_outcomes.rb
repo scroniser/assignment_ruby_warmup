@@ -2,8 +2,9 @@ def dice_outcomes(dice=1, rolls)
   nums = {}
   rolls.times do |round|
     num = roll_dice(dice)
+    #nums[num] ||= nums[num] +1
     if  nums[num] != nil
-      nums[num] = nums[num] + 1
+      nums[num] += 1
     else
       nums[num] = 1
     end
@@ -29,4 +30,4 @@ def roll_dice(dice=1)
 end
 
 #Test output: 
-#dice_outcomes(4, 100)
+dice_outcomes(4, 100)

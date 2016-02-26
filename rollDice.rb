@@ -7,4 +7,4 @@ def roll_dice(dice=1)
 end
 
 #Test output: 
-#print roll_dice(4)
+print roll_dice(4)
