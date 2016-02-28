@@ -9,7 +9,7 @@ def dice_outcomes(dice=1, rolls)
       nums[num] = 1
     end
   end
-  print "#{nums}\n"
+  print "#{nums.sort}\n"
   nums.sort.each_with_index do |(key, display), index|
     if index != 0
       print "\n"

@@ -13,4 +13,4 @@ def fibonacci(n)
 end
 
 #test
-print fibonacci(1)
+print fibonacci(89)
