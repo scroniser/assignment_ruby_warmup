@@ -5,8 +5,8 @@ def stock_picker(stocks)
     stocks.each_with_index do |y, index2|
       if x < y && index < index2 && maxWin < y - x
         maxWin = y-x
-        buySell[0] = index2
-        buySell[1] = index
+        buySell[0] = index
+        buySell[1] = index2
       end
     end
   end
@@ -14,4 +14,4 @@ def stock_picker(stocks)
 end
 
 #test
-#print stock_picker([44, 30, 24, 32, 35, 30, 40, 38, 15])
+print stock_picker([44, 30, 24, 32, 35, 30, 40, 38, 15])

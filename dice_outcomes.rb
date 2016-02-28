@@ -8,7 +8,7 @@ def dice_outcomes(dice=1, rolls)
       nums[num] = 1
     end
   end
-  print "#{nums}\n"
+  print "#{nums.sort}\n"
   nums.sort.each_with_index do |(key, display), index|
     if index != 0
       print "\n"
@@ -29,4 +29,4 @@ def roll_dice(dice=1)
 end
 
 #Test output: 
-#dice_outcomes(4, 100)
+dice_outcomes(4, 100)
